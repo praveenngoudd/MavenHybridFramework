@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FREE CRM Application Test Automation Smoke Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.crm.qa.TestListeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Free CRM Application Test Cases(failed)">
+    <classes>
+      <class name="com.crm.qa.TestCases.HomePageTest">
+        <methods>
+          <include name="verifyDealsPageLinkTest"/>
+          <include name="endReport"/>
+          <include name="setUp"/>
+          <include name="setLog4j"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="verifyUserNameTest"/>
+          <include name="tearDown"/>
+          <include name="verifyContactsLinkTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.TestCases.HomePageTest -->
+      <class name="com.crm.qa.TestCases.LoginPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="setUp"/>
+          <include name="setLog4j"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="loginPageTitleTest"/>
+          <include name="crmLogoImageTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.TestCases.LoginPageTest -->
+    </classes>
+  </test> <!-- Free CRM Application Test Cases(failed) -->
+</suite> <!-- Failed suite [FREE CRM Application Test Automation Smoke Suite] -->

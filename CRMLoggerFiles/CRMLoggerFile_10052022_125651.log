@@ -1,0 +1,9 @@
+2022-05-10 12:57:01,040  INFO [main] WebEventListener:26 - Application Launched Successfully
+2022-05-10 12:57:01,151  INFO [main] LoginPage:36 - Login Page Title Verified
+2022-05-10 12:57:01,539  INFO [main] LoginPage:113 - Browser Terminated
+2022-05-10 12:57:01,541  INFO [main] LoginPage:114 - -----------------------------------------------
+2022-05-10 12:57:08,972  INFO [main] WebEventListener:26 - Application Launched Successfully
+2022-05-10 12:57:09,140  INFO [main] LoginPage:44 - CRM Logo Verified
+2022-05-10 12:57:09,454  INFO [main] LoginPage:113 - Browser Terminated
+2022-05-10 12:57:09,455  INFO [main] LoginPage:114 - -----------------------------------------------
+2022-05-10 12:57:16,446  INFO [main] WebEventListener:26 - Application Launched Successfully
