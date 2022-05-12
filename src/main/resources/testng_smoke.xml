@@ -11,8 +11,11 @@
 	<test name="Free CRM Application Test Cases">
 	
 		<classes>
-			<class name="com.crm.qa.TestCases.LoginPageTest"></class>
-			<class name="com.crm.qa.TestCases.HomePageTest"></class>
+			<!--<class name="com.crm.qa.TestCases.LoginPageTest"></class>-->
+			<!--  <class name="com.crm.qa.TestCases.HomePageTest"></class>-->
+			
+			<class name ="com.crm.qa.orange.TestCases.LoginPageOrangeTest"></class>
+			<class name ="com.crm.qa.orange.TestCases.HomePageOrangeTest"></class>
 		</classes>
 		
 	</test>
