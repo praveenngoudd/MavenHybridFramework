@@ -7,47 +7,43 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.BaseClass.TestBase;
 
-public class LoginPage extends TestBase 
-{
-	@FindBy(name="username")
-	WebElement username;
+public class LoginPage extends TestBase {
 	
-	@FindBy(name="password")
+	 @FindBy(name="username") 
+	 WebElement username;
+	 
+
+	@FindBy(name = "password")
 	WebElement password;
-	
-	@FindBy(xpath="//input[@class='btn btn-small' and @type='submit']") 
+
+	@FindBy(xpath = "//input[@class='btn btn-small' and @type='submit']")
 	WebElement loginButton;
-	
-	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
+
+	@FindBy(xpath = "//button[contains(text(),'Sign Up')]")
 	WebElement signUpButton;
-	
-	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
+
+	@FindBy(xpath = "//img[contains(@class,'img-responsive')]")
 	WebElement crmLogo;
-	
-	public LoginPage()
-	{
+
+	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
-	
-	public String validateLoginPageTitle()
-	{
+
+	public String validateLoginPageTitle() {
 		return driver.getTitle();
 	}
-	
-	public boolean validateCRMImage()
-	{
+
+	public boolean validateCRMImage() {
 		return crmLogo.isDisplayed();
 	}
-	
-	public HomePage login(String uname, String pword)
-	{
+
+	public HomePage login(String uname, String pword) {
 		username.sendKeys(uname);
 		password.sendKeys(pword);
-		
-		JavascriptExecutor js = (JavascriptExecutor)driver;
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", loginButton);
-				
+
 		return new HomePage();
 	}
 }
-
