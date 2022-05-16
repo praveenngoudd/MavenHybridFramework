@@ -37,9 +37,9 @@ public class APIDemo extends TestBase {
         given().
                 header("Content-Type","application/json").
                 body("{\n" +
-                        "    \"first_name\": \"Sachin\",\n" +
-                        "    \"last_name\": \"Tendulkar\",\n" +
-                        "    \"email\": \"Sachin@gmail.com\"} ").
+                        "    \"first_name\": \"Qentelli\",\n" +
+                        "    \"last_name\": \"Solutions\",\n" +
+                        "    \"email\": \"Qentellisolutions@gmail.com\"} ").
                 log().all().
         when().
                 post("/employees").
@@ -65,9 +65,9 @@ public class APIDemo extends TestBase {
     public void put() {
         given().header("Content-Type", "application/json")
                 .body("{\n" +
-                        "    \"first_name\": \"Kohli\",\n" +
-                        "    \"last_name\": \"King\",\n" +
-                        "    \"email\": \"Kohli@gmail.com\"\n" +
+                        "    \"first_name\": \"QentelliSolutions\",\n" +
+                        "    \"last_name\": \"PrivateLimited\",\n" +
+                        "    \"email\": \"QSPL@gmail.com\"\n" +
                         "    \n" +
                         "}\n").
                 log().all().
